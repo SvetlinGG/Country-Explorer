@@ -1,5 +1,6 @@
 @import './variables.css';
 @import './header.css';
+@import './buttons.css';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -9,7 +10,7 @@
 
 body {
   font-family: var(--font);
-  background: var(--bg);
+  background: linear-gradient(135deg, #e0eaff 0%, #f0f9ff 40%, #e8f4fd 70%, #ede9fe 100%);
   color: var(--text);
   min-height: 100vh;
 }
