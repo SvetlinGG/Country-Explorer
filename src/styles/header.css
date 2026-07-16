@@ -4,6 +4,22 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('/world-map.svg') center / cover no-repeat;
+  opacity: 0.045;
+  pointer-events: none;
+  z-index: 0;
+}
+
+header .container {
+  position: relative;
+  z-index: 1;
 }
 
 header .container {
