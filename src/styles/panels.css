@@ -262,7 +262,7 @@
   transform: translateY(0);
 }
 
-/*  Region List  */
+
 .region-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
