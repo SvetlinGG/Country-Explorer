@@ -33,6 +33,93 @@
           <span class="glass-btn__label">Region</span>
         </button>
       </div>
+
+      <!-- Search Panels -->
+      <div class="search-panels">
+
+        <!-- Continent Panel -->
+        <div class="search-panel" id="panel-continent">
+          <div class="panel-header">
+            <span class="panel-icon">🌍</span>
+            <div>
+              <h2 class="panel-title">Explore by Continent</h2>
+              <p class="panel-subtitle">Select a continent to discover its countries</p>
+            </div>
+          </div>
+          <div class="continent-grid">
+            <button class="continent-chip" data-value="Africa">🌍 Africa</button>
+            <button class="continent-chip" data-value="Americas">🌎 Americas</button>
+            <button class="continent-chip" data-value="Asia">🌏 Asia</button>
+            <button class="continent-chip" data-value="Europe">🏰 Europe</button>
+            <button class="continent-chip" data-value="Oceania">🏝️ Oceania</button>
+            <button class="continent-chip" data-value="Antarctic">🧊 Antarctic</button>
+          </div>
+        </div>
+
+        <!-- Country Panel -->
+        <div class="search-panel" id="panel-country">
+          <div class="panel-header">
+            <span class="panel-icon">🏳️</span>
+            <div>
+              <h2 class="panel-title">Search Countries</h2>
+              <p class="panel-subtitle">Type a country name to find it instantly</p>
+            </div>
+          </div>
+          <div class="search-input-wrap">
+            <span class="search-icon">🔍</span>
+            <input
+              type="text"
+              id="country-search"
+              class="search-input"
+              placeholder="e.g. Japan, Brazil, Germany…"
+              autocomplete="off"
+            />
+            <button class="search-clear" id="country-clear" aria-label="Clear">✕</button>
+          </div>
+          <div class="search-tags">
+            <span class="tag-label">Popular:</span>
+            <button class="search-tag" data-value="United States">🇺🇸 USA</button>
+            <button class="search-tag" data-value="Japan">🇯🇵 Japan</button>
+            <button class="search-tag" data-value="Brazil">🇧🇷 Brazil</button>
+            <button class="search-tag" data-value="Germany">🇩🇪 Germany</button>
+            <button class="search-tag" data-value="Australia">🇦🇺 Australia</button>
+          </div>
+        </div>
+
+        <!-- Region Panel -->
+        <div class="search-panel" id="panel-region">
+          <div class="panel-header">
+            <span class="panel-icon">📍</span>
+            <div>
+              <h2 class="panel-title">Browse by Region</h2>
+              <p class="panel-subtitle">Pick a region to explore countries within it</p>
+            </div>
+          </div>
+          <div class="region-list">
+            <button class="region-item" data-value="Northern Africa"> Northern Africa</button>
+            <button class="region-item" data-value="Southern Africa"> Southern Africa</button>
+            <button class="region-item" data-value="Eastern Africa"> Eastern Africa</button>
+            <button class="region-item" data-value="Western Africa"> Western Africa</button>
+            <button class="region-item" data-value="Middle Africa"> Middle Africa</button>
+            <button class="region-item" data-value="Northern America"> Northern America</button>
+            <button class="region-item" data-value="Central America"> Central America</button>
+            <button class="region-item" data-value="South America">South America</button>
+            <button class="region-item" data-value="Eastern Asia">🏯 Eastern Asia</button>
+            <button class="region-item" data-value="South-Eastern Asia">South-Eastern Asia</button>
+            <button class="region-item" data-value="Southern Asia">Southern Asia</button>
+            <button class="region-item" data-value="Western Asia">Western Asia</button>
+            <button class="region-item" data-value="Central Asia">Central Asia</button>
+            <button class="region-item" data-value="Northern Europe">Northern Europe</button>
+            <button class="region-item" data-value="Southern Europe">Southern Europe</button>
+            <button class="region-item" data-value="Eastern Europe">Eastern Europe</button>
+            <button class="region-item" data-value="Western Europe">Western Europe</button>
+            <button class="region-item" data-value="Australia and New Zealand">Australia & NZ</button>
+            <button class="region-item" data-value="Melanesia">Melanesia</button>
+            <button class="region-item" data-value="Polynesia">Polynesia</button>
+          </div>
+        </div>
+
+      </div>
     </div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
