@@ -1,7 +1,7 @@
 
 const API_URL = "https://restcountries.com/v3.1/all?fields=name,capital,population,region,flags";
 
-async function fetchCountries(){
+export async function fetchAllCountries(){
     try {
         const response = await fetch(API_URL);
 
@@ -35,4 +35,4 @@ function renderCountries(countries){
     })
 }
 
-fetchCountries();
+fetchAllCountries();
