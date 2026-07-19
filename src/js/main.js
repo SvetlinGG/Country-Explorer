@@ -1,16 +1,16 @@
 import { initButtons } from './components/buttons.js';
-import { fetchAllCountries} from './api.js';
-import { renderCountries } from './ui/renderCountries.js'
+import { fetchAllCountries } from './api.js';
+import { renderCountries } from './ui/renderCountries.js';
 
-
-async function initApp(){
-    initButton();
+async function initApp() {
+    initButtons();
 
     try {
         const countries = await fetchAllCountries();
-        renderCountries(countries)
+        renderCountries(countries);
     } catch (error) {
-        console.error('Application error:', error)
+        console.error('Application error:', error);
     }
 }
-initApp()
+
+initApp();

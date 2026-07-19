@@ -1,11 +1,8 @@
-
-
-export function renderCountries(countries){
+export function renderCountries(countries) {
     const container = document.querySelector("#countries-container");
 
-    if (!container){
-        throw new Error('Countries container was not found')
-    }
+    if (!container) throw new Error('Countries container was not found');
+
     container.innerHTML = "";
 
     countries.forEach(country => {
@@ -13,13 +10,11 @@ export function renderCountries(countries){
         card.className = "country-card";
         card.innerHTML = `
             <img src="${country.flags.png}" alt="${country.name.common} flag" />
-                <h3>${country.name.common}</h3>
-                <p><strong>Capital:</strong> ${country.capital}</p>
-                <p><strong>Population:</strong> ${country.population.toLocaleString()}</p>
-                <p><strong>Region:</strong> ${country.region}</p>
-            
+            <h3>${country.name.common}</h3>
+            <p><strong>Capital:</strong> ${country.capital?.[0] ?? 'N/A'}</p>
+            <p><strong>Population:</strong> ${country.population.toLocaleString()}</p>
+            <p><strong>Region:</strong> ${country.region}</p>
         `;
-        container.appendChild(card)
-    })
+        container.appendChild(card);
+    });
 }
-renderCountries();
