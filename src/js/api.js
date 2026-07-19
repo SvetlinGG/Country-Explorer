@@ -1,8 +1,21 @@
-const BASE = 'https://countries.dev/v2';
 
-export async function getAllCountries(){
+const API_URL = "https://restcountries.com/v3.1/all?fields=name,capital,population,region,flags";
 
-    const res = await fetch(`${BASE}/countries`);
-    if (!res.ok) throw new Error('Failed to fetch country name');
-    return res.json();
+async function fetchCountries(){
+    try {
+        const response = await fetch(API_URL);
+
+        if (!response.ok){
+            throw new Error(`HTTP error: ${response.status}`)
+        }
+
+        const countries = await response.json();
+        renderCountries(countries);
+    } catch (error) {
+        console.error("Fetch error:", error);
+    }
+}
+
+function renderCountries(countries){
+    
 }
