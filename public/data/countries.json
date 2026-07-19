@@ -1,0 +1,19 @@
+
+
+[
+  {
+    "name": {
+      "common": "Bulgaria",
+      "official": "Republic of Bulgaria"
+    },
+    "capital": ["Sofia"],
+    "population": 6447710,
+    "region": "Europe",
+    "subregion": "Eastern Europe",
+    "flags": {
+      "png": "/flags/bulgaria.png",
+      "svg": "/flags/bulgaria.svg",
+      "alt": "The flag of Bulgaria"
+    }
+  }
+]

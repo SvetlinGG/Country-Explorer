@@ -1,7 +1,7 @@
-const API_URL = "https://restcountries.com/v3.1/all?fields=name,capital,population,region,flags";
+const DATA_COUNTRIES = "/public/data/countries.json";
 
 export async function fetchAllCountries() {
-    const response = await fetch(API_URL);
+    const response = await fetch(DATA_COUNTRIES);
     if (!response.ok) throw new Error(`HTTP error: ${response.status}`);
     return response.json();
 }
